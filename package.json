@@ -1,0 +1,22 @@
+{
+  "name": "wordle-api",
+  "version": "1.0.0",
+  "description": "wordle api for SPA Harvard Extension",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shut-haven/wordle-api.git"
+  },
+  "author": "Juan Miguel Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shut-haven/wordle-api/issues"
+  },
+  "homepage": "https://github.com/shut-haven/wordle-api#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
