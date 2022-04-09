@@ -11,12 +11,7 @@ const pool = new Pool({
 const app = express();
 const port = process.env.PORT || 3000;
 
-const corsOptions = {
-    origin: 'https://spa-he-jmg.github.io/Assignment-4/',
-    optionsSuccessStatus: 200
-}
-
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.get('/', async (req, res) => {
     const client = await pool.connect();
