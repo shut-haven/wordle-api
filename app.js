@@ -14,8 +14,7 @@ const port = process.env.PORT || 3000;
 app.get('/', async (req, res) => {
     const client = await pool.connect();
     const result = await client.query('SELECT * from test_table');
-    const results = JSON.stringify(result.rows);
-    res.send(results);
+    res.json(result.rows);
 });
 
 app.listen(port, () => {
